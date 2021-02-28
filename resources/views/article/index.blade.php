@@ -3,9 +3,9 @@
 @section('content')
     <h1 class="text-center text-danger p-5">Список статей</h1>
     @foreach ($articles as $article)
-        <a href="{{ route('article.show', $article->id) }}"><h3 class="text-center">{{$article->name}}</h3></a>
-       <p class="text-center"> <a class="nav-link small" href="{{ route('article.edit', $article->id) }}">Обновить</a></p>
-        <p class="text-center"> <a class="nav-link small" href="{{ route('article.destroy', $article->id) }}"
+        <a href="{{ route('articles.store', $article->id) }}"><h3 class="text-center">{{$article->name}}</h3></a>
+       <p class="text-center"> <a class="nav-link small" href="{{ route('articles.edit', $article->id) }}">Обновить</a></p>
+        <p class="text-center"> <a class="nav-link small" href="{{ route('articles.destroy', $article->id) }}"
                                    data-method="delete" rel="nofollow" data-confirm="Вы уверены?">Удалить</a></p>
         {{-- Str::limit – функция-хелпер, которая обрезает текст до указанной длины --}}
         {{-- Используется для очень длинных текстов, которые нужно сократить --}}

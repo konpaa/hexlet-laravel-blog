@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-{{ Form::model($article, ['url' => route('article.store')]) }}
+{{ Form::model($article, ['url' => route('articles.store')]) }}
 @include('article.form')
 <div class="form-group">
     <div class="col-lg-10 col-lg-offset-2">

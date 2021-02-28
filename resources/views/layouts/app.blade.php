@@ -13,8 +13,8 @@
 @include('flash')
 <div class="container-md alert-link mt-3">
     <a href="{{ route('welcome.blog') }}">About</a>
-    <a class="ml-3" href="{{ route('article.index') }}">Articles</a>
-    <a class="ml-3" href="{{ route('article.create') }}">Create</a>
+    <a class="ml-3" href="{{ route('articles.index') }}">Articles</a>
+    <a class="ml-3" href="{{ route('articles.create') }}">Create</a>
 </div>
 
 <div class="container-lg">
