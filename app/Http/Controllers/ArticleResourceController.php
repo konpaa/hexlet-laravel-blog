@@ -56,8 +56,7 @@ class ArticleResourceController extends Controller
         $article->save();
 
         // Редирект на указанный маршрут с добавлением флеш сообщения
-        return redirect()
-            ->route('articles.index')->with('success', 'Create Article successfully');
+        return redirect()->route('articles.index')->with('success', 'Create Article successfully');
     }
 
     /**
@@ -113,6 +112,6 @@ class ArticleResourceController extends Controller
     {
         //        $article = Article::findOrFail($id);
         $article->delete();
-        return redirect()->route('articles.index')->with('success', 'Delete Article successfully');
+        return redirect()->route('articles.index')->with('warning', 'Delete Article successfully');
     }
 }
